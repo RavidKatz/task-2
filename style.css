@@ -14,21 +14,24 @@ body {
 }
 h1 {
   color: #fff;
-  font-size: 2em;
+  font-size: 3em;
   
 }
+h3{font-size: 2em}
 
 div {
   color: #fff;
 }
 p {
   font-size: medium;
+  color: #fff;
+}
+h2{
+  color: #fff;
+}
+button{
   
 }
-button {
-  background-color: #373e40;
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -45,7 +48,7 @@ button {
   padding: 5px 0;
   top: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: 40px;
 
   position: absolute;
   z-index: 1;
@@ -69,13 +72,27 @@ img {
   height: auto;
   margin-left: 200px;
 }
-
+.profile-Cont{
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* הוספת כיוון עמוד */
+  text-align: left; /* מרכוז את הכל במרכז העמוד */
+  gap: 0px;
+}
 .profileImg{
-  width: 150px; /* קביעת רוחב התמונה */
-  height: 200px; /* קביעת גובה התמונה */
+  width: 250px; /* קביעת רוחב התמונה */
+  height: 300px; /* קביעת גובה התמונה */
   border-radius: 50%; /* הגדרת הפרופיל כעגול */
   object-fit: cover; 
   margin-left: 20px;
+}
+.profile-txt{
+  flex: 1;
+  margin-left: 250px;
+  font-size: 3ex;
+  color: #fff;
+ 
+
 }
 .contact-Info-Cont{
   display: flex;
@@ -86,24 +103,30 @@ img {
 }
 .contactIcons{
   display: flex;
-  flex-direction: column;
-  margin-right: 20px; /* מרווח מימין לאייקונים */
+  flex-direction: row;
+  margin-right: 2000px; /* מרווח מימין לאייקונים */
+  gap: 50px;
+  
 }
+.profile-title {
+  font-size: 3em; /* גודל הכותרת */
+  margin-bottom: 2px; /* מרווח מתחת לכותרת */
+  direction: rtl;
+}
+code {
+  font-family: 'Courier New', monospace; /* קביעת גופן לקוד */
+  white-space: pre-line; /* שמירה על הרווחים והשורות שאתה מכניס */
+}
+.NALLA{
+  width: 250px; /* קביעת רוחב התמונה */
+  height: 300px; /* קביעת גובה התמונה */
+  border-radius: 80%; /* הגדרת הפרופיל כעגול */
+  object-fit: cover; 
+  margin-left: 20px;
+}
+b{
+  font-size: 2em;
+}
+.projectIMG{
 
-.contactIcons img{
-  max-width: 30px; /* מקסימום רוחב של האייקון */
-  max-height: 30px; /* מקסימום גובה של האייקון */
-  margin-bottom: 10px; /* מרווח מתחת לכל אייקון */
-  background-color: #373e40;
-  align-items:flex-start ;
-}
-.Info{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #fff;
-}
-.Info p {
-  margin: 2;
-  margin-left: 0;
 }
