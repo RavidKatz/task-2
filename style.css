@@ -190,6 +190,7 @@ video {
   font-size: larger;
   margin: 50px;
   margin-top: 100px;
+  margin-left: 135px;
   /* text-shadow: #18414b; */
 }
 
@@ -216,6 +217,7 @@ video {
   display: flex;
   flex-direction: row;
   font-size: 20px;
+  margin-left: 120px;
 }
 
 .Resume {
@@ -245,14 +247,14 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 8px;
     size: 1px;
   }
 
   .nav-icon {
     max-width: 100%;
     height: auto;
-    margin-left: 80px;
+    margin-left: 20px;
     background-color: #272d2f;
   }
 
@@ -276,7 +278,6 @@ video {
     font-family: "Courier New", monospace;
     white-space: pre-line;
     font-size: 20px;
-    
   }
 
   .profileimg {
@@ -285,7 +286,6 @@ video {
     border-radius: 50%;
     object-fit: cover;
     margin-left: 200px;
-    
   }
 
   .icon-global {
@@ -293,31 +293,32 @@ video {
   }
 
   .profile-txt {
-    flex: 1;
-    margin-left: 80px;
+    flex: 1px;
+    margin-left: 20px;
+
     font-size: 10px;
     color: #ffffff;
   }
 
   .nalla {
-    width: 80px;
-    max-height: 100px;
+    width: 150px;
+    max-height: 150px;
     border-radius: 30%;
     object-fit: cover;
-    margin: 50px;
+    margin: 10px;
   }
 
   video {
-    width: 70px;
+    width: 100px;
     border-radius: 20%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .nalla-container {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 6px;
+    gap: 10px;
+    padding: 8px;
     margin-top: 146px;
     justify-content: center;
     font-size: 10px;
@@ -326,12 +327,12 @@ video {
   }
 
   .project-txt {
-    font-size: 15px;
-    margin: 0;
+    font-size: 10px;
+    margin: 30px;
   }
 
   .project-txt h2 {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
   }
 
@@ -347,7 +348,7 @@ video {
     flex-direction: column;
     width: 80px;
     height: 100px;
-    margin: 50px;
+    margin: 90px;
     font-variant-position: sub;
     font-size: small;
   }
@@ -370,7 +371,24 @@ video {
 
   .contact-me {
     color: #fff;
-    margin-left: 100px;
+    margin-left: 130px;
     font-size: 15px;
+    margin-top: 18px;
+  }
+
+  .cvimg {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  footer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    margin-top: auto;
+    padding-top: 30px;
   }
 }
