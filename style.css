@@ -7,6 +7,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   margin: 0;
@@ -17,12 +18,9 @@ body {
 body {
   background-color: #373e40;
   font-family: "Courier New", monospace;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
-  position: sticky;
   position: fixed;
   top: 0;
   width: 100%;
@@ -39,9 +37,10 @@ nav {
 
 h1 {
   color: #fff;
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
-  margin-top: 136px;
+  margin: 80px 0;
+  padding: 0 30px;
 }
 
 h2 {
@@ -58,23 +57,27 @@ div {
 
 p {
   color: #fff;
+  padding: 15px;
 }
 
 footer {
   display: flex;
-  gap: 80px;
-  justify-content: center;
   align-items: center;
-  min-height: 70px;
+  justify-content: center;
+  gap: 80px;
   margin-top: auto;
   padding-top: 30px;
+  padding-bottom: 15px;
 }
-.tooltip {
+
+.tooltip,
+.hamburger {
   position: relative;
   padding: 16px;
 }
 
-.tooltip i {
+.tooltip i,
+.hamburger {
   font-size: 22px;
 }
 
@@ -96,14 +99,24 @@ footer {
   visibility: visible;
 }
 
+button {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
 .container {
+  position: relative;
+  top: 60px;
+  height: calc(100% - 60px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 .icon-global {
   color: #fff;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .contact-icon {
@@ -115,36 +128,33 @@ footer {
   display: flex;
   align-items: center;
   gap: 120px;
-  padding: 60px 0;
-  margin-top: 70px;
+  padding: 60px;
   justify-content: center;
   background-color: #2a3639;
 }
 
-.profileimg {
-  width: 300px;
-  height: 350px;
-  border-radius: 50%;
+.profile-img {
+  width: 800px;
+  max-width: 300px;
+  border-radius: 80%;
   object-fit: cover;
-  margin-left: 20px;
   animation: fade ease 5s;
   animation-iteration-count: 1;
 }
+
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
-   opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
 
 .profile-txt {
-  flex: 1;
-  margin-left: 80px;
   font-size: 25px;
+  margin-top: 30px;
   color: #f1feed;
-  margin-top: 100px;
 }
 
 .profile-title {
@@ -158,15 +168,14 @@ footer {
   max-height: 350px;
   border-radius: 30%;
   object-fit: cover;
-  margin: 50px;
 }
 
 .nalla-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 6px;
-  margin-top: 146px;
+  padding: 10px 30px;
+  margin-top: 30px;
   justify-content: center;
   font-size: 25px;
   background-color: #2a3639;
@@ -187,13 +196,13 @@ footer {
 .video-container {
   max-width: 200px;
   width: 100%;
-  margin: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 video {
   width: 100%;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .project-txt {
@@ -201,14 +210,12 @@ video {
   margin: 50px;
   margin-top: 100px;
   margin-left: 135px;
-  /* text-shadow: #18414b; */
 }
 
 .project-img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  /* border: #18414b; */
 }
 
 .card-project {
@@ -219,8 +226,6 @@ video {
   margin: 20px;
   font-variant-position: sub;
   font-size: small;
-  /* border: #18414b;
-  box-shadow: #18414b; */
 }
 
 .card-container {
@@ -244,96 +249,59 @@ video {
 }
 
 @media only screen and (max-width: 700px) {
-  body {
-    background-color: rgb(74, 88, 103);
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-  }
-
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    size: 1px;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
   }
 
-  .nav-icon {
-    max-width: 100%;
-    height: auto;
-    margin-left: 20px;
-    background-color: #272d2f;
+  .tooltiptext {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  button {
+    display: block;
   }
 
   h1 {
-    font-size: 40px;
-    position: relative;
+    font-size: 36px;
   }
 
   .profile-container {
-    display: flex;
-    align-items: center;
-    gap: 120px;
-    padding: 40px 0;
-    margin-top: 30px;
-    justify-content: center;
-    background-color: #2a3639;
-    padding-right: 200px;
+    gap: 44px;
   }
 
   .profile-title {
-    font-family: "Courier New", monospace;
-    white-space: pre-line;
     font-size: 20px;
-  }
-
-  .profileimg {
-    width: 100px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 200px;
   }
 
   .icon-global {
     font-size: 20px;
   }
 
-  .profile-txt {
-    flex: 1px;
-    margin-left: 20px;
+  .profile-img {
+    max-width: 150px;
+  }
 
+  .profile-txt {
     font-size: 10px;
-    color: #ffffff;
   }
 
   .nalla {
     width: 150px;
     max-height: 150px;
-    border-radius: 30%;
-    object-fit: cover;
     margin: 10px;
   }
 
-  video {
-    width: 100px;
-    border-radius: 20%;
-    margin-top: 30px;
-  }
-
   .nalla-container {
-    display: flex;
-    align-items: center;
     gap: 10px;
     padding: 8px;
-    margin-top: 146px;
-    justify-content: center;
     font-size: 10px;
-    background-color: #2a3639;
-    width: 100%;
+    flex-direction: column;
   }
 
   .project-txt {
@@ -349,22 +317,16 @@ video {
   .project-img {
     width: 80px;
     height: 80px;
-    object-fit: cover;
     border: #18414b;
   }
 
   .card-project {
-    display: flex;
-    flex-direction: column;
     width: 80px;
     height: 100px;
     margin: 90px;
-    font-variant-position: sub;
-    font-size: small;
   }
 
   .card-container {
-    display: flex;
     flex-direction: column;
     font-size: 8px;
     justify-content: center;
@@ -373,14 +335,11 @@ video {
 
   .Resume {
     font-size: 10px;
-    background-color: #7f7f7f;
     padding: 10px;
-    color: #fff;
     margin-top: 40px;
   }
 
   .contact-me {
-    color: #fff;
     margin-left: 130px;
     font-size: 15px;
     margin-top: 18px;
@@ -388,17 +347,9 @@ video {
 
   .cvimg {
     width: 30px;
-    height: auto;
-    margin-left: 10px;
   }
 
   footer {
-    display: flex;
     gap: 40px;
-    justify-content: center;
-    align-items: center;
-    min-height: 70px;
-    margin-top: auto;
-    padding-top: 30px;
   }
 }

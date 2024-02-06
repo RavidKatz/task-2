@@ -9,54 +9,73 @@
       src="https://kit.fontawesome.com/cd301768c2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const showHideNavToggle = function () {
+        const navItems = document.getElementsByClassName("tooltip");
+        for (let i = 0; i < navItems.length; i++) {
+          const navItem = navItems[i];
+          if (navItem.className === "tooltip") {
+            navItem.className += " hide";
+          } else {
+            navItem.className = "tooltip";
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <header>
       <nav>
-        <a class="tooltip">
+        <button class="hamburger" onclick="showHideNavToggle()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="tooltip hide">
           <i class="fa-solid fa-house" style="color: #eca64c"></i>
           <span class="tooltiptext">Home</span>
         </a>
-        <a class="tooltip" href="/About.html">
+        <a class="tooltip hide" href="/About.html">
           <i class="fa-solid fa-circle-info" style="color: #ffffff"></i>
           <span class="tooltiptext">About</span>
         </a>
-        <a class="tooltip" href="/projects.html">
+        <a class="tooltip hide" href="/projects.html">
           <i class="fa-brands fa-r-project" style="color: #ffffff"></i>
           <span class="tooltiptext">Projects</span>
         </a>
-        <a class="tooltip" href="/Resume.html">
+        <a class="tooltip hide" href="/Resume.html">
           <i class="fa-solid fa-file" style="color: #ffffff"></i>
           <span class="tooltiptext">Resume</span>
         </a>
       </nav>
     </header>
-    <section>
-     <i><h1>Hello, I'm Ravid Katz.</h1></i>
-      <div class="profile-container">
-        <img
-          src="/images/profileImg.jpeg"
-          alt="profileimg"
-          class="profileimg"/>
-        <h2 class="profile-title">Welcome to my portfolio</h2>
-      </div>
-    </section>
-    <footer>
-      <a href="mailto:ravid2108@gmail.com" target="_blank">
-        <i class="fa-regular fa-envelope icon-global"></i>
-      </a>
-      <a href="tel:0546589200" target="_blank">
-        <i class="fa-solid fa-phone icon-global"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ravidkatz/" target="_blank">
-        <i class="fa-brands fa-linkedin icon-global"></i>
-      </a>
-      <a href="https://github.com/RavidKatz/task-2" target="_blank">
-        <i class="fa-brands fa-github icon-global" ></i>
-      </a>
-      <a href="https://www.facebook.com/ravid.katz.1/" target="_blank">
-        <i class="fa-brands fa-facebook icon-global"></i>
-      </a>
-    </footer>
+    <div class="container">
+      <section>
+        <h1><i>Hello, I'm Ravid Katz.</i></h1>
+        <div class="profile-container">
+          <img
+            src="/images/profileImg.jpeg"
+            alt="profile-img"
+            class="profile-img"
+          />
+          <h2 class="profile-title">Welcome to my portfolio</h2>
+        </div>
+      </section>
+      <footer>
+        <a href="mailto:ravid2108@gmail.com" target="_blank">
+          <i class="fa-regular fa-envelope icon-global"></i>
+        </a>
+        <a href="tel:0546589200" target="_blank">
+          <i class="fa-solid fa-phone icon-global"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ravidkatz/" target="_blank">
+          <i class="fa-brands fa-linkedin icon-global"></i>
+        </a>
+        <a href="https://github.com/RavidKatz/task-2" target="_blank">
+          <i class="fa-brands fa-github icon-global"></i>
+        </a>
+        <a href="https://www.facebook.com/ravid.katz.1/" target="_blank">
+          <i class="fa-brands fa-facebook icon-global"></i>
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
