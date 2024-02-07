@@ -1,0 +1,24 @@
+# Ravid's Portfolio
+
+This projrct display my portfolio and my projects over the time
+
+I used in my project a new CSS propertis:
+
+- **calc()** function to calulate the heigth of the main container with the heigth of the fixed navigation bar
+- **transform: translate(-50%, -50%)** to make the titles of the navigation icons in the center of the icons
+- **media-query** to support small screens and responsive design
+- **box-shadow** to add some style to my project cards
+- **flex-wrap** to make flex items break row if no enough space in one line
+
+### External JS library
+
+I've also used for the first time in an external JS library of icons that called font-aswesome that provide an icons to use
+
+### Custom JS
+
+I've also used for the first time a custom function to show an hamburger menu on small screens instead of a navigation bar my function called **showHideNavToggle** and she add a custom class that hide the icons on small screen and display tham after click on hamburger button
+
+### animation: fade
+
+The use of the fade creates an animation for the variable that I would like to animate, I wanted to make the profile picture at the entrance to the page appear in animation, I used the inventions of the GPT chat to do it
+**@keyframes fade**

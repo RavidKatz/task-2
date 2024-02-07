@@ -37,7 +37,7 @@ nav {
 
 h1 {
   color: #fff;
-  font-size: 60px;
+  font-size: 52px;
   text-align: center;
   margin: 80px 0;
   padding: 0 30px;
@@ -116,7 +116,7 @@ button {
 
 .icon-global {
   color: #fff;
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .contact-icon {
@@ -134,9 +134,9 @@ button {
 }
 
 .profile-img {
-  width: 800px;
-  max-width: 300px;
-  border-radius: 80%;
+  width: 50%;
+  max-width: 230px;
+  border-radius: 50%;
   object-fit: cover;
   animation: fade ease 5s;
   animation-iteration-count: 1;
@@ -160,7 +160,7 @@ button {
 .profile-title {
   font-family: "Courier New", monospace;
   white-space: pre-line;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .nalla {
@@ -207,15 +207,15 @@ video {
 
 .project-txt {
   font-size: larger;
-  margin: 50px;
-  margin-top: 100px;
-  margin-left: 135px;
+  margin-top: 40px;
+  padding: 0 30px;
 }
 
 .project-img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 .card-project {
@@ -226,13 +226,18 @@ video {
   margin: 20px;
   font-variant-position: sub;
   font-size: small;
+  box-shadow: 0 0 4px 4px #7066666e;
+  border-radius: 12px;
 }
 
 .card-container {
   display: flex;
-  flex-direction: row;
   font-size: 20px;
-  margin-left: 120px;
+  padding: 0 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Resume {
@@ -312,18 +317,6 @@ video {
   .project-txt h2 {
     font-size: 15px;
     margin: 0;
-  }
-
-  .project-img {
-    width: 80px;
-    height: 80px;
-    border: #18414b;
-  }
-
-  .card-project {
-    width: 80px;
-    height: 100px;
-    margin: 90px;
   }
 
   .card-container {
