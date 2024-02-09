@@ -254,6 +254,9 @@ video {
 }
 
 @media only screen and (max-width: 700px) {
+ body{
+  background-color: #41545a;
+ }
   nav {
     align-items: flex-start;
     flex-direction: column;
